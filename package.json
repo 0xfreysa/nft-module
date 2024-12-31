@@ -1,0 +1,38 @@
+{
+  "name": "agentic-nft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "execute": "node -r tsconfig-paths/register -r ts-node/register scripts/createCollection.ts",
+    "sign": "node -r tsconfig-paths/register -r ts-node/register scripts/sign-safe.ts",
+    "upload": "node -r tsconfig-paths/register -r ts-node/register scripts/uploadDirToIpfs.ts",
+    "replicate": "node -r tsconfig-paths/register -r ts-node/register scripts/callReplicate.ts",
+    "generate-traits": "node -r tsconfig-paths/register -r ts-node/register scripts/generateTraits.ts",
+    "deploy-safe": "node -r tsconfig-paths/register -r ts-node/register scripts/sign-safe.ts",
+    "deploySafe": "node -r tsconfig-paths/register -r ts-node/register scripts/deploySafe.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@safe-global/api-kit": "^2.5.6",
+    "@safe-global/protocol-kit": "^5.1.1",
+    "@safe-global/types-kit": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "glob": "^11.0.0",
+    "openai": "^4.77.0",
+    "p-limit": "3.1.0",
+    "pinata-web3": "^0.5.3",
+    "replicate": "^1.0.1",
+    "viem": "^2.21.57"
+  }
+}
